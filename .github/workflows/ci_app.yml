@@ -8,10 +8,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@50fbc622fc4ef5163becd7fab6573eac35f8462e  # actions/checkout@v1
       with:
         lfs: false
     - name: Trailing whitespace check
-      uses: optroodt/github-action-whitespace-linter@master
+      uses: optroodt/github-action-whitespace-linter@46e46d2d4175dcc96729ced4e3a752764473740b  # optroodt/github-action-whitespace-linter@master
       with:
         files: "./vscode-dbt/*"
